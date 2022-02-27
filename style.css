@@ -1,0 +1,33 @@
+/* MAIN TARGET: stilizare cu CSS fara modificare cod HTML*/
+a[target="_blank"]{
+    color: red
+}
+/* Cerinta 2: textul linkului care indică site-ul LINK group trebuie colorat cu roşu; (Folosit selector de atribut"target="_blank")*/
+a{
+    color:green
+}
+/*Cerinta 1: textul tuturor linkurilor care indică una dintre adresele care îi aparţin site-ului Google trebuie colorat cu verde;(Folosit selector "a" pentru link-urile ce apartin de Google)*/
+
+#second-div p:nth-child(even){
+    color: red;
+}
+#second-div p:nth-child(odd){
+    color: blue;
+}
+/* selectare p dupa id(#second-div), p:nth-child(par[rosu])(impar[albastru])
+
+Cerinta 3: paragrafele din cadrul elementului second-div trebuie colorate alternativ cu roşu și albastru (Paragraph 4 să fie roşu, Paragraph 5 să fie albastru, Paragraph 6 din nou roşu...)*/
+
+#first-div > p:nth-child(-n+3)::after{
+    content: "NEW";
+    color: yellow;
+
+}
+/*folosire ">" pentru a selecta copii imediat ai "first-div.
+Cerinta 4: la sfârşitul Paragrafului 2 şi Paragrafului 3, folosind CSS, adăugaţi textul – NEW, care va fi galben;*/
+
+body > p:last-child:hover{
+    font-style: italic;
+}
+/* din cadrul elementului body se selecteaza last-child cu simbolul ">" pentru a se selecta doar ultimul p din body.
+Cerinta 5:trecând mouse-ul peste elementul Paragraph 10, textul său trebuie să devină înclinat/italic.*/
